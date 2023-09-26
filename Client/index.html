@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BEAUTIPOL</title>
     <!-- Copiar en cada HTML  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +11,58 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    
   </head>
-  <body></body>
+  <body class="bg-gray-100 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="header bg-blue-600 text-white p-4">
+      <a href="#" class="logo font-bold text-xl">Your Brand Logo</a>
+      <!-- If you add navigation later, you can style it here -->
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content p-4">
+      <!-- T-shirt Designs Section -->
+      <section class="tshirt-designs mb-8">
+        <h1 class="text-2xl font-semibold mb-4">Featured Designs</h1>
+        <article class="tshirt-design mb-4">
+          <img
+            src="path-to-tshirt-image.jpg"
+            alt="T-shirt design description"
+            class="w-full h-auto mb-2"
+          />
+          <p class="text-gray-700">Description of the t-shirt design</p>
+        </article>
+        <!-- Add more <article> tags for each t-shirt design with the same classes for consistent styling -->
+      </section>
+
+      <!-- Email Signup Form -->
+      <section class="email-signup bg-blue-50 p-4 rounded">
+        <h2 class="text-xl font-semibold mb-4">Stay Updated!</h2>
+        <form action="#" method="post" class="flex flex-col space-y-2">
+          <label for="email" class="text-gray-700"
+            >Subscribe for updates:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            class="p-2 border rounded"
+          />
+          <button
+            type="submit"
+            class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition"
+          >
+            Subscribe
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-blue-600 text-white p-4 mt-8">
+      <p>&copy; 2023 Your Brand Name. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
 </html>
