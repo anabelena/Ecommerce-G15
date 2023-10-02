@@ -9,15 +9,26 @@ body {
     --nav-bg-color: #3B6978;
     --alternative-bg-color:#84A9AC;
     --extra-color:#204051;
+    --neutral-gray:#404040;
+    --font-color-white: #f1ebe3;
 
     font-family: 'Roboto Mono', monospace;
-    background-color: var(--main-bg-color)
-    
+    background-color: var(--main-bg-color);
+    font-size: 16px;
 }
 
 .logo_size{
     width: 100px;
     height: 100px;
+}
+
+.section_announcement_bar{
+    background-color: var(--alternative-bg-color);
+    color: var(--font-color-white);
+}
+
+.announcement_bar_message{
+    font-size: 0.9rem;
 }
 
 .footer-info{
