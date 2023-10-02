@@ -6,22 +6,19 @@
     <title>BEAUTIPOL</title>
 
     <!-- Google FONTS  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Sedgwick Ave -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap"
     rel="stylesheet"/>
-
+    <!-- League Spartan -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-
-    <!-- -------  -->
 
     <link rel="stylesheet" href="./shared/styles.css">
   </head>
@@ -38,8 +35,7 @@
 
     <nav class="flex justify-around items-center">
       <div class="text-center">
-        <p class="text-2xl font-league"> Beautipol </p>
-        <p class="text-xs"> FEEL THE YOUNG SPIRIT </p>
+        <img class="w-10" src="assets/images/Header-beautipol.png" alt="">
       </div> 
 
       <div>
@@ -87,27 +83,7 @@
       </section>
 
       <!-- Email Signup Form -->
-      <section class="email-signup p-4 rounded">
-        <h2 class="mb-4"> Unete y obten un 15%  </h2>
-        <form action="#" method="post" class="flex flex-col space-y-2">
-          <label for="email" 
-            >Subscribe for updates:</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            class="p-2 border rounded"
-          />
-          <button
-            type="submit"
-            class=" p-2 rounded"
-          >
-            Subscribe
-          </button>
-        </form>
-      </section>
+     
     </main>
 
     <!-- Footer 
@@ -119,15 +95,32 @@
     </footer> 
   -->
 
-  <footer>
-    <div class="footer-content">
-       <p class="" > Unete y obten un 15% de descuento</p>
-       <p> en tu primera compra.</p>
-       
+  <footer class="">
+    <div>
+    <section class="p-4 rounded">
+      
+      <p class="mb-4 font-bold text-[20px] text-white"> Unete y obten un 15% en tu primera compra. </p>
+      <form action="#" method="post" class="flex flex-col space-y-2">
+        <label for="email"></label>
+        <input
+          class="p-2 border rounded"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Tu correo electronico."
+          
+        />
+        <button
+          type="submit"
+          class=" p-2 rounded"
+        >
+          Subscribe
+        </button>
+      </form>
+    </section>
+
+
        <div>
-       <input type="text" placeholder=" Tu Correo Electronico "> 
-       
-       </div>
        
         <div class="footer-links">
             <ul>
@@ -146,11 +139,7 @@
               <li><a href="#"><img class="w-10" src="./assets/icons/instagram.svg" alt="Instagram"></a></li>
               <li><a href="#"><img class="w-10" src="./assets/icons/whatsapp.svg" alt="Whatsapp"></a></li>
           </ul>
-      </div>
-
-   
-          
-        </div>
+      </div>        
     </div>
     <div class="footer-info border">
         <p>&copy; 2023 BEAUTIPOL. All rights reserved.</p>
@@ -158,8 +147,6 @@
     </div>
 </footer>
    
-  
-
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
