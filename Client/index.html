@@ -23,7 +23,7 @@
 
     <!-- -------  -->
 
-    <link rel="stylesheet" href="./shared/sytles.css">
+    <link rel="stylesheet" href="./shared/styles.css">
   </head>
   <body class=" ">
     <!-- Announcement Bar-->
@@ -34,22 +34,30 @@
     </div>
     <!-- Header -->
  <!-- Header -->
- <header class="header p-4 border ">
-  <div>
-    <p> Beautipol </p>
-    <p> FEEL THE YOUNG SPIRIT </p>
-  </div>
- 
-  <div>
-    <nav class="header-menu-inline ">
-      <ul class="">
-        <li> Inicio </li>
-        <li> Productos </li>
-        <li> Descuentos </li>
-        <li> Historia </li>
-      </ul>
+ <header class="p-4 border ">
+
+    <nav class="flex justify-around items-center">
+      <div class="text-center">
+        <p class="text-2xl font-league"> Beautipol </p>
+        <p class="text-xs"> FEEL THE YOUNG SPIRIT </p>
+      </div> 
+
+      <div>
+        <ul class="flex gap-14">
+          <li class="cursor-pointer"> Inicio </li>
+          <li class="cursor-pointer"> Productos </li>
+          <li class="cursor-pointer"> Descuentos </li>
+          <li class="cursor-pointer"> Historia </li>
+        </ul>
+      </div>
+
+      <div class="flex gap-5" >
+        <img class="w-5 cursor-pointer" src="./assets/icons/login.svg" alt="">
+        <img class="w-5 cursor-pointer" src="./assets/icons/shopping-cart.svg" alt="">
+      </div>
+     
     </nav>
-  </div> 
+ 
   
 
   <div class="header_icons">
@@ -80,7 +88,7 @@
 
       <!-- Email Signup Form -->
       <section class="email-signup p-4 rounded">
-        <h2 class="mb-4">Stay Updated!</h2>
+        <h2 class="mb-4"> Unete y obten un 15%  </h2>
         <form action="#" method="post" class="flex flex-col space-y-2">
           <label for="email" 
             >Subscribe for updates:</label
@@ -113,11 +121,14 @@
 
   <footer>
     <div class="footer-content">
-        <div class="footer-logo">
-            <img 
-            class="logo_size border rounded"
-            src="./assets/images/Beautipol_logo.jpeg" alt="Company Logo">
-        </div>
+       <p class="" > Unete y obten un 15% de descuento</p>
+       <p> en tu primera compra.</p>
+       
+       <div>
+       <input type="text" placeholder=" Tu Correo Electronico "> 
+       
+       </div>
+       
         <div class="footer-links">
             <ul>
                 <li><a href="">Home</a></li>
@@ -127,7 +138,6 @@
                 <li><a href="">Contact Us</a></li>
             </ul>
         </div>
-
 
         <div class="footer-social">
           <h3>Follow Us</h3>
