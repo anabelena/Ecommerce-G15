@@ -17,9 +17,12 @@ body {
     font-size: 16px;
 }
 
+
 footer{
     background-color: var(--extra-color);
 }
+
+
 .logo_size{
     width: 100px;
     height: 100px;
@@ -46,4 +49,10 @@ footer{
     font-family: 'League Spartan', monospace;
     color: var(--neutral-gray);
     letter-spacing: 3px;
+}
+
+.gallery{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
