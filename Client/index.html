@@ -34,7 +34,7 @@
     <header class="p-4 border ">
       <nav class="flex justify-around items-center">
         <div class="text-center">
-          <img class="h-[80px]" src="/design/1x/beautipol-textlogo.png" alt="">
+          <img class="h-[70px]" src="/design/1x/beautipol-textlogo.png" alt="">
         </div> 
         <div>
           <ul class="flex gap-14">
@@ -52,7 +52,7 @@
   </header>
 
   <section class="hero">
-    <div class="bord bg-[url('/design/polos-colgados-verdes-hero.jpg')] h-[600px] bg-center bg-cover relative bg-no-repeat 
+    <div class="bord bg-[url('./assets/images/polos-colgados-verdes-hero.jpg')] h-[600px] bg-center bg-cover relative bg-no-repeat 
     ">
       <div class=" flex justify-center items-center flex-col h-full gap-7">
         <div>
@@ -72,9 +72,9 @@
 
   <section>
 
-  <div class="ml-10 my-10 font-semibold text-3xl"> Los mas vendidos </div>
+  <div class="ml-52 my-10 font-semibold text-3xl"> Los mas vendidos </div>
 
-  <div class="ml-10 mr-10 grid grid-cols-3 gap-7">
+  <div class="ml-52 mr-10 grid grid-cols-3 gap-7">
     <div>
       <img src="./assets/images/polo-azul-claro-nike-m.png" alt="">
       <div class="font-bold mt-3"> Polo Azul Nike</div>
@@ -101,15 +101,15 @@
   
 <section>
   <div class="ml-10 my-10 font-semibold text-3xl"> Nueva Coleccion </div>
-  <div>
-    <div><img src="./assets/images/polo-blanco-modelo-home.png" alt=""></div>
-    <div><img src="./assets/images/polo-negro-modelo-home.jpg" alt=""></div>
-    <div><img src="./assets/images/polo-colgador-home.jpg" alt=""></div>
-    <div><img src="./assets/images/polo-negro-mano-colgando-home.png" alt=""></div>
- 
-    <div></div>
+  <div class="gallery">
+    
+      <img src="./assets/images/polo-blanco-modelo-home.png" alt="">
+      <img src="./assets/images/polo-negro-mano-colgando-home.png" alt="">
+      <img class="" src="./assets/images/polo-negro-modelo-home.jpg" alt="">
+      <img src="./assets/images/polo-colgador-home.jpg" alt="">
+   
   </div>
-
+  
 
 </section>
 
@@ -120,14 +120,16 @@
      
           <form action="#" method="post" class="flex flex-col space-y-4">
           <label for="email"></label>
-          <input
-            class="p-2 border"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Tu correo electronico."
-          />
-          <img class="w-5" src="./assets/icons/arrow-forward.svg" alt="">
+          <div class="relative">
+            <input
+              class="p-2 pr-6 w-full border pl-3"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Tu correo electronico."
+            />
+            <span class="absolute inset-y-0 right-3 flex items-center pointer-events-none cursor-pointer"><img class="w-5" src="./assets/icons/arrow-forward.svg" alt=""></span>
+          </div>
         
           <p class="font-semibold text-xl text-white"> Siguenos en </p>
           <ul class="flex ml-5 gap-5">
@@ -140,9 +142,9 @@
       <div class="grid grid-cols-2 mt-10 gap-11">
         <div>
           <p class="font-bold text-xl text-white"> Sobre Nosotros </p>
-          <ul class="mt-2 leading-9 text-lg text-white font-normal">
-            <li class="cursor-pointer"> Nuestra Historia</li>
-            <li class="cursor-pointer"> Contactanos</li>
+          <ul class="mt-2 leading-9 text-lg text-white font-extralight	">
+            <li class="cursor-pointer	"> Nuestra Historia</li>
+            <li class="cursor-pointer	"> Contactanos</li>
             <li class="cursor-pointer"> Politica de Privacidad</li>
           </ul>
 
@@ -151,20 +153,19 @@
         <div>
           <p class="font-bold text-white text-xl"> Ayuda y Soporte
           </p>
-          <ul class="mt-2 leading-9 text-lg text-white font-normal">
-            <li> Ordenes y Envios </li>
-            <li> Devoluciones</li>
-            <li> FAQs</li>
+          <ul class="mt-2 leading-9 text-lg text-white font-extralight	">
+            <li > Ordenes y Envios </li>
+            <li > Devoluciones</li>
+            <li > FAQs</li>
           </ul>
         </div>
       </div>
     </div>
   
-    <div class="my-8 mx-8 flex gap-3 text-white">
-      <img src="./assets/icons/copyright.svg" alt="">
-      <p> 2023 Beautipol. Todos los derechos reservados. </p> 
+    <div class="pl-[70px] p-8 mx-20 flex gap-3 text-white text-[12px] text-[#CBCBCB]">
+      <img class="w-10px" src="./assets/icons/copyright.svg" alt="">
+      <p class="leading-[35px]"> 2023 Beautipol. Todos los derechos reservados. </p> 
     </div>
- 
 
   </footer>
 
