@@ -17,9 +17,12 @@ body {
     font-size: 16px;
 }
 
+
 footer{
     background-color: var(--extra-color);
 }
+
+
 .logo_size{
     width: 100px;
     height: 100px;
