@@ -12,18 +12,21 @@ body {
     --neutral-gray:#404040;
     --font-color-white: #f1ebe3;
 
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', monospace;
     background-color: var(--main-bg-color);
     font-size: 16px;
 }
 
+footer{
+    background-color: var(--extra-color);
+}
 .logo_size{
     width: 100px;
     height: 100px;
 }
 
 .section_announcement_bar{
-    background-color: var(--alternative-bg-color);
+    background-color: var(--extra-color);
     color: var(--font-color-white);
 }
 
@@ -35,4 +38,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.font-league {
+    font-family: 'League Spartan', monospace;
+    color: var(--neutral-gray);
+    letter-spacing: 3px;
 }
