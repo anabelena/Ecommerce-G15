@@ -25,9 +25,10 @@
   </head>
 
   <body>
-    <div id="section-announcement-bar" class="section_announcement_bar"> 
-      <div class="p-3 text-center" >
-        <p class="announcement_bar_message"> ¡ENVÍO GRATIS a todo el Perú desde S/129.00! </p>
+
+    <div class="announcement-bar"> 
+      <div class="p-1.5 text-center" >
+        <p class="announcement-bar-text"> Delivery gratis a partir de S/ 199.00 en todo Lima y provincias </p>
       </div>
     </div>
 
@@ -51,7 +52,7 @@
       </nav>  
   </header>
 
-  <section class="hero">
+  <div class="hero">
     <div class="bord bg-[url('./assets/images/polos-colgados-verdes-hero.jpg')] h-[600px] bg-center bg-cover relative bg-no-repeat 
     ">
       <div class=" flex justify-center items-center flex-col h-full gap-7">
@@ -67,14 +68,14 @@
        
       </div>
     </div>
-  </section>
+  </div>
    
 
-  <section>
+  <main>
 
-  <div class="ml-52 my-10 font-semibold text-3xl"> Los mas vendidos </div>
+  <div class="mx-16 my-16 font-semibold text-3xl"> Los mas vendidos </div>
 
-  <div class="ml-52 mr-10 grid grid-cols-3 gap-7">
+  <div class="mx-16 my-16 grid grid-cols-3 gap-7">
     <div>
       <img src="./assets/images/polo-azul-claro-nike-m.png" alt="">
       <div class="font-bold mt-3"> Polo Azul Nike</div>
@@ -97,27 +98,58 @@
       <div> Colores </div>
     </div>
   </div>
-  </section>
+
+  <div class="mx-16 my-16 font-semibold text-3xl"> Nueva Coleccion </div>
+
+  <div class="grid grid-cols-2 gap-10 mx-16 my-16"> 
+
+    <div class="collection-pic-left flex flex-col gap-[66px]"> 
+      <img class=" h-[516px]" src="./assets/images/polo-blanco-modelo-home.png" alt="">
+      <img class="object-cover h-[837px]" src="./assets/images/polo-colgador-home.jpg" alt="">
+    </div>
   
-<section>
-  <div class="ml-10 my-10 font-semibold text-3xl"> Nueva Coleccion </div>
-  <div class="gallery">
-    
-      <img src="./assets/images/polo-blanco-modelo-home.png" alt="">
-      <img src="./assets/images/polo-negro-mano-colgando-home.png" alt="">
-      <img class="" src="./assets/images/polo-negro-modelo-home.jpg" alt="">
-      <img src="./assets/images/polo-colgador-home.jpg" alt="">
-   
+    <div class="collection-pic-right flex flex-col gap-[132px]">
+      <img class="object-cover h-[837px]" src="./assets/images/polo-negro-modelo-home.jpg" alt="">
+      <img class="object-cover h-[450px]" src="./assets/images/polo-negro-mano-colgando-home.png" alt="">
+    </div>
+
   </div>
+
+  
+ 
+<!--
+  <div class="template-new-collection-main m-12">
+    <div class="template-new-collection">
+      <div class="">
+        <img class="object-cover w-full h-[500px]" src="./assets/images/polo-blanco-modelo-home.png" alt="">
+      </div>
+      <div>
+        <img class="object-cover h-[840px]" src="./assets/images/polo-negro-modelo-home.jpg" alt="">
+      </div>
+      <div class="">
+        <img class="" src="./assets/images/polo-colgador-home.jpg" alt="">
+      </div>
+      <div class="flex items-end">
+        <img class="object-cover w-full h-[450px]" src="./assets/images/polo-negro-mano-colgando-home.png" alt="">
+      </div>
+    </div>
+ -->
+  
+
+  </div>
+
+  </main>
+  
+
+  
   
 
 </section>
 
   <footer>
-    <div class="flex justify-around">
+    <div class="color-text-white flex justify-around">
       <div class="mt-10">
-        <p class="font-bold text-xl text-white"> Unete y obten un 15% en tu primera compra. </p>
-     
+        <p class="footer-title font-bold text-xl"> Unete y obten un 15% en tu primera compra. </p>
           <form action="#" method="post" class="flex flex-col space-y-4">
           <label for="email"></label>
           <div class="relative">
@@ -131,7 +163,7 @@
             <span class="absolute inset-y-0 right-3 flex items-center pointer-events-none cursor-pointer"><img class="w-5" src="./assets/icons/arrow-forward.svg" alt=""></span>
           </div>
         
-          <p class="font-semibold text-xl text-white"> Siguenos en </p>
+          <p class="footer-title font-semibold text-xl"> Siguenos en </p>
           <ul class="flex ml-5 gap-5">
                 <li><a href="#"><img class="w-6 h-6" src="./assets/icons/facebook-logo.svg" alt="Facebook"></a></li>
                 <li><a href="#"><img class="w-6 h-6" src="./assets/icons/instagram-logo.svg" alt="Whatsapp"></a></li>
@@ -139,32 +171,30 @@
       </div>
 
 
-      <div class="grid grid-cols-2 mt-10 gap-11">
+      <div class="color-text-white grid grid-cols-2 mt-10 gap-11">
         <div>
-          <p class="font-bold text-xl text-white"> Sobre Nosotros </p>
-          <ul class="mt-2 leading-9 text-lg text-white font-extralight	">
+          <p class="font-bold text-xl"> Sobre Nosotros </p>
+          <ul class=" mt-2 leading-9 text-lg">
             <li class="cursor-pointer	"> Nuestra Historia</li>
             <li class="cursor-pointer	"> Contactanos</li>
             <li class="cursor-pointer"> Politica de Privacidad</li>
           </ul>
-
-
         </div>
         <div>
-          <p class="font-bold text-white text-xl"> Ayuda y Soporte
+          <p class="font-bold text-xl"> Ayuda y Soporte
           </p>
-          <ul class="mt-2 leading-9 text-lg text-white font-extralight	">
-            <li > Ordenes y Envios </li>
-            <li > Devoluciones</li>
-            <li > FAQs</li>
+          <ul class="mt-2 leading-9 text-lg">
+            <li class="cursor-pointer" > Ordenes y Envios </li>
+            <li class="cursor-pointer"> Devoluciones</li>
+            <li class="cursor-pointer"> FAQs</li>
           </ul>
         </div>
       </div>
     </div>
   
-    <div class="pl-[70px] p-8 mx-20 flex gap-3 text-white text-[12px] text-[#CBCBCB]">
+    <div class="color-text-white flex justify-center gap-1 py-1.5">
       <img class="w-10px" src="./assets/icons/copyright.svg" alt="">
-      <p class="leading-[35px]"> 2023 Beautipol. Todos los derechos reservados. </p> 
+      <p> 2023 Beautipol. Todos los derechos reservados.</p> 
     </div>
 
   </footer>
@@ -172,3 +202,4 @@
   <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
+

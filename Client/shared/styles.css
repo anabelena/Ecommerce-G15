@@ -4,37 +4,24 @@
 }
 
 body {
-  
-    --main-bg-color: #E7DFD5;
-    --nav-bg-color: #3B6978;
-    --alternative-bg-color:#84A9AC;
-    --extra-color:#204051;
-    --neutral-gray:#404040;
-    --font-color-white: #f1ebe3;
 
-    font-family: 'Montserrat', monospace;
-    background-color: var(--main-bg-color);
+    background-color: var(--color-bg);
+    font-family: 'Montserrat',monospace;
     font-size: 16px;
+
+    /* Variables */
+    
+    --color-bg:#E7DFD5;
+    --color-bg-header-footer:#204051;
+    --color-bg-announcement-bar:#3B6978;
+    --color-base-text:#f1ebe3;
+    --color-alternative-text:#404040
+
 }
 
 
 footer{
-    background-color: var(--extra-color);
-}
-
-
-.logo_size{
-    width: 100px;
-    height: 100px;
-}
-
-.section_announcement_bar{
-    background-color: var(--extra-color);
-    color: var(--font-color-white);
-}
-
-.announcement_bar_message{
-    font-size: 0.9rem;
+    background-color: var(--color-bg-header-footer);
 }
 
 .footer-info{
@@ -42,17 +29,34 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
+
+.announcement-bar{
+    background-color: var(--color-bg-header-footer);
+    color: var(--color-base-text);
+}
+
+.announcement-bar-text{
+    font-size: 0.8rem;
+}
+
 .text-center {
     text-align: center;
 }
-.font-league {
-    font-family: 'League Spartan', monospace;
-    color: var(--neutral-gray);
-    letter-spacing: 3px;
+
+.color-text-white{
+    color: var(--color-base-text);
 }
 
-.gallery{
-    width: 70%;
+
+.template-new-collection-main{
+    display: flex;
+    justify-content: center;
+}
+.template-new-collection{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    column-gap: 40px;
 }
+
