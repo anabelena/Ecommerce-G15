@@ -28,21 +28,20 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./shared/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
   <body>
-    <div class="announcement-bar">
-      <div class="p-1.5 text-center">
-        <p class="announcement-bar-text">
-          Delivery gratis a partir de S/ 199.00 en todo Lima y provincias
+    <header>
+      <div class="header-bar py-2 flex items-center justify-center">
+        <p class="text-sm">
+          Delivery <span class="font-semibold">gratis</span> por compras a
+          partir de <span class="font-semibold">S/199.00</span> soles.
         </p>
       </div>
-    </div>
 
-    <header class="py-4 border gap">
-      <nav class="flex justify-around items-center m:justify-around">
-        <div class="nav-left text-center">
+      <nav class="max-sm:p-1.5 flex justify-between items-center md:px-4">
+        <div class="nav-left md:px-3.5">
           <img
             class="h-[70px] max-sm:hidden"
             src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/logo/beautipol-textlogo.png"
@@ -50,13 +49,14 @@
           />
         </div>
         <div class="nav-center">
-          <ul class="flex gap-4 md:text-2xl md:gap-12">
-            <li class="cursor-pointer">Inicio</li>
-            <li class="cursor-pointer">Productos</li>
-            <li class="cursor-pointer">Descuentos</li>
+          <ul class="flex gap-4 md:text-2xl md:gap-x-12">
+            <li class="cursor-pointer"><a href=""> Home </a></li>
+            <li class="cursor-pointer"><a href=""> Productos</a></li>
+            <li class="cursor-pointer"><a href=""> Descuentos</a></li>
           </ul>
         </div>
-        <div class="nav-right flex gap-2">
+
+        <div class="nav-right flex px-4 gap-7">
           <img
             class="w-5 cursor-pointer"
             src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/login.svg"
@@ -78,24 +78,26 @@
         <div class="flex justify-center items-center flex-col h-full gap-7">
           <div>
             <p
-              class="text-3xl md:text-4xl text-center text-white tracking-wide"
+              class="text-3xl font-bold md:text-4xl text-center text-white tracking-wide"
             >
               NUEVA COLECCION
             </p>
           </div>
           <div>
-            <p class="text-2xl md:text-3xl text-center italic text-white tracking-wide">
+            <p
+              class="text-2xl font-semibold md:text-3xl text-center text-white tracking-wide"
+            >
               FALL 2023
             </p>
           </div>
-          <div class="">
+          <div class="border border-solid px-4 py-2">
             <button class="text-xl md:text-2xl cursor-pointer">Comprar</button>
           </div>
         </div>
       </div>
     </div>
 
-    <main class="px-[15px]">
+    <main class="">
       <section class="flex justify-center">
         <div class="max-w-[1200px]">
           <div class="my-16 font-semibold text-3xl">
@@ -196,24 +198,25 @@
       </section>
     </main>
 
-    <footer class="px-[15px]">
-      <div class="color-text-white flex justify-around flex-col md:flex-row">
-        <div class="mt-10">
-          <p class="footer-title font-bold">
+  
+    <footer class="pt-5 pb-5">
+      <div class="mr-2 ml-2 md:mr-20 md:ml-20 color-text-white  flex flex-col justify-between lg:flex-row ">
+        <div class="footer-left pb-5">
+          <p class="footer-title font-bold md:text-xl">
             Unete y obten un 15% en tu primera compra.
           </p>
           <form action="#" method="post" class="flex flex-col space-y-4">
             <label for="email"></label>
             <div class="relative">
               <input
-                class="p-2 pr-6 w-full lg:w-full border pl-3"
+                class="p-2 pr-6 w-full lg:w-full border pl-2"
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Tu correo electronico."
               />
               <span
-                class="absolute inset-y-0 right-12 md:right-3 flex items-center pointer-events-none cursor-pointer"
+                class="absolute inset-y-0 right-8 md:right-3 flex items-center pointer-events-none cursor-pointer"
                 ><img
                   class="w-5"
                   src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/arrow-forward.svg"
@@ -223,29 +226,31 @@
           </form>
         </div>
 
-        <div class="color-text-white grid grid-cols-2 mt-10 gap-11">
-          <div>
-            <p class="font-bold">Sobre Nosotros</p>
-            <ul class="mt-2 leading-9">
-              <li class="cursor-pointer">Nuestra Historia</li>
-              <li class="cursor-pointer">Contactanos</li>
-              <li class="cursor-pointer">Politica de Privacidad</li>
+        <div class=" footer-right color-text-white max-md:text-left grid grid-cols-2 md:gap-x-20">
+          <div class="">
+            <p class="font-bold md:text-2xl pb-2 "> Sobre Nosotros <p/>
+            <ul class="md:text-xl md:font-normal">
+              <li class="leading-10 cursor-pointer">Nuestra Historia</li>
+              <li class="leading-10 cursor-pointer">Contactanos</li>
+              <li class="leading-10 cursor-pointer">Politica de Privacidad</li>
             </ul>
           </div>
           <div>
-            <p class="font-bold">Ayuda y Soporte</p>
-            <ul class="mt-2 leading-9">
-              <li class="cursor-pointer">Ordenes y Envios</li>
-              <li class="cursor-pointer">Devoluciones</li>
-              <li class="cursor-pointer">FAQs</li>
+            <p class="font-bold md:text-2xl pb-2 ">Ayuda y Soporte</p>
+            <ul class="md:text-xl md:font-normal ">
+              <li class="leading-10 cursor-pointer">Ordenes y Envios</li>
+              <li class="leading-10 cursor-pointer">Devoluciones</li>
+              <li class="leading-10 cursor-pointer">FAQs</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="color-text-white md:flex-row">
-        <p class="footer-title font-semibold hidden md:block">Siguenos en</p>
-        <ul class="flex ml-5 gap-5">
+      <div class="ml-2 md:ml-20 md:flex-row mt-3 color-text-white">
+        <p class="footer-title font-semibold md:text-lg hidden md:block">
+          Siguenos en
+        </p>
+        <ul class="md:pt-5 flex gap-2">
           <li>
             <a href="#"
               ><img
@@ -264,16 +269,19 @@
           </li>
         </ul>
       </div>
-      <div class="color-text-white flex justify-center gap-1 py-1.5">
+      <div
+        class="ml-2 md:ml-20 max-sm:text-xs md:text-sm gap-1.5 mt-4 color-text-white flex justify-start items-center"
+      >
         <img
-          class="w-10px"
+          class="w-[16px]"
           src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/copyright.svg"
           alt=""
         />
-        <p>2023 Beautipol. Todos los derechos reservados.</p>
+        <p class="">2023 Beautipol. Todos los derechos reservados.</p>
       </div>
     </footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
   </body>
 </html>
