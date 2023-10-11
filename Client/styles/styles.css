@@ -7,9 +7,9 @@ body {
 
     background-color: var(--color-bg);
     font-family: 'Montserrat',monospace;
-    font-size: 16px;
+    font-size: 1rem; /*16px*/
 
-    /* Variables */
+    /* Color Variables */
     
     --color-bg:#E7DFD5;
     --color-bg-header-footer:#204051;
@@ -19,6 +19,14 @@ body {
 
 }
 
+.color-text-white{
+    color: var(--color-base-text);
+}
+
+.header-bar{
+    background-color: var(--color-bg-header-footer);
+    color: var(--color-base-text);
+}
 
 footer{
     background-color: var(--color-bg-header-footer);
@@ -29,39 +37,3 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-
-
-.announcement-bar{
-    background-color: var(--color-bg-header-footer);
-    color: var(--color-base-text);
-}
-
-.announcement-bar-text{
-    font-size: 0.8rem;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.color-text-white{
-    color: var(--color-base-text);
-}
-
-
-.template-new-collection-main{
-    display: flex;
-    justify-content: center;
-}
-.template-new-collection{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 40px;
-}
-
-.estilo-x {
-    font-size: calc(1em + 1vw);
-    line-height: 1em;
-    padding: 1em;
-    margin: 1em;}
