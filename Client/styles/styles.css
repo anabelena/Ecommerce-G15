@@ -8,15 +8,16 @@ body {
     background-color: var(--color-bg);
     font-family: 'Montserrat',monospace;
     font-size: 1rem; /*16px*/
-
+    color: var(--color-alternative-text);
+    
     /* Color Variables */
     
     --color-bg:#E7DFD5;
     --color-bg-header-footer:#204051;
     --color-bg-announcement-bar:#3B6978;
     --color-base-text:#f1ebe3;
-    --color-alternative-text:#404040
-
+    --color-alternative-text:#121212;
+    /* --color-alternative-text:#404040; */
 }
 
 .color-text-white{
