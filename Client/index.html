@@ -74,7 +74,7 @@
       <div
         class="bord bg-[url('https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polos-colgados-verdes-hero.jpg')] h-[600px] bg-center bg-cover relative bg-no-repeat"
       >
-        <div class="flex justify-center items-center flex-col h-full gap-7">
+        <div class="flex justify-center items-center flex-col h-full gap-14">
           <div class="bg-white bg-opacity-50 p-6 space-y-4">
             <div>
               <p
@@ -92,10 +92,10 @@
             </div>
           </div>
           <div
-            class="flex w-[184px] h-[40px] p-4 justify-center items-center gap-1 flex-shrink-0 bg-[#b27652]"
+            class="flex w-[184px] h-[40px] px-4 py-8 justify-center items-center gap-1 flex-shrink-0 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] transition duration-[0.4s] hover:scale-[1.1] transition-transform duration-[0.1s]"
           >
             <button
-              class="cursor-pointer text-white text-sm font-normal capitalize leading-normal"
+              class="cursor-pointer text-white text-[16px] font-normal capitalize leading-normal"
             >
               Ver Productos
             </button>
@@ -112,13 +112,15 @@
           </div>
           <div class="my-4 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <img
-                class="w-full object-contain"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-azul-claro-nike-m.jpg"
-                alt="Polo Azul Nike"
-              />
+              <div class="overflow-hidden">
+                <img
+                  class="w-full object-contain transform scale-100 hover:scale-[1.05] transition-transform duration-[0.25s]"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-azul-claro-nike-m.jpg"
+                  alt="Polo Azul Nike"
+                />
+              </div>
               <div>
-                <div class="font-bold leading-6">Polo Azul Nike</div>
+                <div class="font-bold leading-6 mt-3">Polo Azul Nike</div>
                 <div class="leading-6">Algodón Pima 100% Peruano</div>
                 <div class="inline-flex justify-start items-end gap-2">
                   <div
@@ -138,62 +140,103 @@
               </div>
             </div>
             <div>
-              <img
-                class="w-full object-contain"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg"
-                alt="Polo Verde Nike"
-              />
-              <div class="font-bold mt-3">Polo Verde Nike</div>
-              <div>Algodon Pima 100% Peruano</div>
-              <div>S/49.99</div>
-              <div>Colores</div>
+              <div class="overflow-hidden">
+                <img
+                  class="w-full object-contain transform scale-100 hover:scale-[1.03] transition-transform duration-[0.3s]"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg"
+                  alt="Polo Verde Nike"
+                />
+              </div>
+
+              <div>
+                <div class="font-bold leading-6 mt-3">Polo Verde Nike</div>
+                <div class="leading-6">Algodón Pima 100% Peruano</div>
+                <div class="inline-flex justify-start items-end gap-2">
+                  <div
+                    class="w-[24px] h-[24px] relative bg-red-400 rounded-[24px]"
+                  ></div>
+                  <div
+                    class="w-[24px] h-[24px] relative bg-black rounded-[24px]"
+                  ></div>
+                  <div
+                    class="w-[24px] h-[24px] relative bg-blue-500 rounded-[24px]"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold leading-6">S/49.99</div>
+              </div>
             </div>
             <div>
-              <img
-                class="w-full object-contain"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-negro-ripcurl-m.jpg"
-                alt="Polo Negro Ripcurl"
-              />
-              <div class="font-bold mt-3">Polo Negro Ripcurl</div>
-              <div>Algodon Pima 100% Peruano</div>
-              <div>S/49.99</div>
-              <div>Colores</div>
+              <div class="overflow-hidden">
+                <img
+                  class="w-full object-contain transform scale-100 hover:scale-[1.03] transition-transform duration-[0.3s]"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-negro-ripcurl-m.jpg"
+                  alt="Polo Negro Ripcurl"
+                />
+              </div>
+              <div>
+                <div class="font-bold leading-6 mt-3">Polo Negro Ripcurl</div>
+                <div class="leading-6">Algodón Pima 100% Peruano</div>
+                <div class="inline-flex justify-start items-end gap-2">
+                  <div
+                    class="w-[24px] h-[24px] relative bg-red-400 rounded-[24px]"
+                  ></div>
+                  <div
+                    class="w-[24px] h-[24px] relative bg-black rounded-[24px]"
+                  ></div>
+                  <div
+                    class="w-[24px] h-[24px] relative bg-blue-500 rounded-[24px]"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold leading-6">S/49.99</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="flex justify-center">
         <div class="flex justify-center flex-col items-center max-w-[1200px]">
-          <div class="font-semibold text-3xl text-left w-full">
+          <div class="font-semibold text-3xl text-left w-full my-10">
             <span>Nueva Coleccion</span>
           </div>
           <div
-            class="grid grid-cols-1 gap-6 my-4 md:grid-cols-2 md:gap-10 md:my-16 m-auto max-w-[1200px]"
+            class="grid grid-cols-1 gap-6 my-4 md:grid-cols-2 md:gap-10 md:mb-16 m-auto max-w-[1200px]"
           >
             <div class="flex flex-col gap-y-8 md:gap-y-20 justify-between">
-              <img
-                class="w-full h-auto aspect-square object-cover object-top"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-blanco-modelo-home.jpg"
-                alt="Polo Blanco Modelo"
-              />
-              <img
-                class="object-contain w-full h-auto"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-colgador-home.jpg"
-                alt="Polo Colgador"
-              />
+              <div class="overflow-hidden">
+                <img
+                  class="w-full h-auto aspect-square object-cover object-top transform scale-100 hover:scale-[1.05] transition-transform duration-[0.25s]"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-blanco-modelo-home.jpg"
+                  alt="Polo Blanco Modelo"
+                />
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  class="object-contain w-full h-auto transform scale-100 hover:scale-[1.05] transition-transform duration-[0.25s]"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-colgador-home.jpg"
+                  alt="Polo Colgador"
+                />
+              </div>
             </div>
 
             <div class="flex flex-col md:gap-10 justify-between">
-              <img
-                class="object-contain w-full h-auto"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-negro-modelo-home.jpg"
-                alt="Polo Negro Modelo"
-              />
-              <img
-                class="w-full h-auto aspect-square object-cover object-top"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-negro-mano-colgando-home.jpg"
-                alt="Polo Negro Mano Colgando"
-              />
+              <div class="overflow-hidden">
+                <img
+                  class="object-contain w-full h-auto transform scale-100 hover:scale-[1.05] transition-transform duration-[0.25s]"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-negro-modelo-home.jpg"
+                  alt="Polo Negro Modelo"
+                />
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  class="w-full h-auto aspect-square object-cover object-top transform scale-100 hover:scale-[1.05] transition-transform duration-[0.25s]"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-negro-mano-colgando-home.jpg"
+                  alt="Polo Negro Mano Colgando"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -201,10 +244,13 @@
 
       <section class="w-fit m-auto mb-8 relative max-w-[1200px]">
         <div class="flex justify-center">
-          <img
-            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/algodon.jpg"
-            alt=""
-          />
+          <div class="overflow-hidden">
+            <img
+              class="transform scale-100 hover:scale-[1.05] transition-transform duration-[0.25s]"
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/algodon.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <div
           class="absolute max-w-[200px] text-xs bottom-0 right-1 md:text-lg md:min-w-[350px] md:bottom-5 md:right-5"

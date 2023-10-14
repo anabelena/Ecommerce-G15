@@ -16,8 +16,9 @@ body {
   --color-bg-announcement-bar: #3b6978;
   --color-base-text: #f1ebe3;
   --color-main-text: #121212;
+  --color-alternative-text: #404040;
   --color-link-text: #748c70;
-  /* --color-alternative-text:#404040;  BLACK*/
+  --color-button-text-hero: #b27652;
 }
 
 main a {
