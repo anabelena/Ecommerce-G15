@@ -20,6 +20,7 @@ body {
   --color-alternative-text: #404040;
   --color-link-text: #748c70;
   --color-button-text-hero: #b27652;
+  --color-cart-text-button-comp:#49656f
 }
 
 main a {
@@ -44,6 +45,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 
 /* Others */
 

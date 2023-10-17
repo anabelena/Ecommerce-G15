@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart-info</title>
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body class="bg-white">
+    <div class="lg:flex">
+      <!-- LEFT SIDE -->
+      <section class="cart-info-left lg:w-[60%] ml-10">
+        <div class="logo">
+          <div class="px-2 pt-2 pb-2 md:px-10 md:pt-2 md:pb-5">
+            <img
+              class="h-[50px] md:h-[70px]"
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/logo/beautipol-textlogo.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="max-sm:hidden breadcrumb flex gap-3 mb-10 text-lg justify-center">
+          <div class="cursor-pointer hover:underline">Carrito</div>
+          <span>/</span>
+          <div class="cursor-pointer hover:underline">Informacion</div>
+          <span>/</span>
+          <div class="cursor-pointer hover:underline">Envios</div>
+          <span>/</span>
+          <div class="cursor-pointer">Pago</div>
+        </div>
+
+        <div class="flex justify-center">
+          <div
+            class="md:flex place-items-baseline w-[300px] md:w-[400px] xl:w-[600px] justify-between "
+          >
+            <div class="text-lg capitalize leading-8 break-words">Contacto</div>
+            <div class="max-sm:hidden flex justify-start items-end gap-5">
+              <p class="text-lg leading-6 break-words">
+                ¿Ya tienes una cuenta?
+              </p>
+              <p
+                class="text-lg capitalize leading-6 break-words cursor-pointer hover:underline"
+              >
+                Ingresar
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <form action="#" method="post" class="mt-3 flex-col justify-center">
+            <div
+              class="h-[40px] flex border border-gray-700 gap-3 w-[300px] md:w-[400px] xl:w-[600px]  "
+            >
+              <img
+                class="ml-3 w-4"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/04de544e8a09d48261e813159d42e78e59b5043c/icons/icon-person-shopping-cart.svg"
+                alt=""
+              />
+              <input
+                class="w-full outline-none"
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" Tu correo electronico."
+              />
+            </div>
+
+            <div class="flex mt-3 gap-2 h-6 border-1">
+              <div
+                class="h-4 w-4 border border-solid border-gray-700 p-2.5"
+              ></div>
+              <p class="text-sm leading-6 break-words">
+                Recibir ofertas y novedades por email.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center">
+          <p class="text-lg capitalize leading-8 break-words mb-3">
+            Direccion de Envio
+          </p>
+
+          <form action="" class="w-[300px] md:w-[400px] xl:w-[600px] mb-10">
+            <div class="mb-4">
+              <label for=""></label>
+              <input
+                type="text"
+                id=""
+                name=""
+                placeholder="Pais/Region"
+                class="w-full p-2 border border-gray-700"
+              />
+            </div>
+
+            <div class="flex justify-between gap-6">
+              <div class="mb-4 w-full">
+                <label for=""></label>
+                <input
+                  type="text"
+                  id=""
+                  name=""
+                  placeholder="Nombre"
+                  class="w-full p-2 border border-gray-700"
+                />
+              </div>
+
+              <div class="mb-4 w-full">
+                <label for=""></label>
+                <input
+                  type="text"
+                  id=""
+                  name=""
+                  placeholder="Apellidos"
+                  class="w-full p-2 border border-gray-700"
+                />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for=""></label>
+              <input
+                type="text"
+                id=""
+                name=""
+                placeholder="Direccion"
+                class="w-full p-2 border border-gray-700"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for=""></label>
+              <input
+                type="text"
+                id=""
+                name=""
+                placeholder="Casa, apartamento, etc. (Opcional)"
+                class="w-full p-2 border border-gray-700"
+              />
+            </div>
+
+            <div class="flex justify-between gap-6">
+              <div class="mb-4 w-full">
+                <label for=""></label>
+                <input
+                  type="text"
+                  id=""
+                  name=""
+                  placeholder="Ciudad"
+                  class="w-full p-2 border border-gray-700"
+                />
+              </div>
+              <div class="mb-4 w-full">
+                <label for=""></label>
+                <input
+                  type="text"
+                  id=""
+                  name=""
+                  placeholder="Region"
+                  class="w-full p-2 border border-gray-700"
+                />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for=""></label>
+              <input
+                type="text"
+                id=""
+                name=""
+                placeholder="Telefono"
+                class="w-full p-2 border border-gray-700"
+              />
+            </div>
+
+            <div class="flex mt-3 gap-2 h-6 border-1">
+              <div
+                class="h-4 w-4 border border-solid border-gray-700 p-2.5"
+              ></div>
+              <p class="text-sm leading-6">Guardar mi informacion.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="w-[500px] flex justify-between">
+            <div class="flex w-[190px] h-[40px] items-center">
+              <img
+                class="w-6 h-6 hover:scale-50 cursor-pointer"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/fcccf12acd7bdce6bdc28e60b4b662dfbffb70cd/icons/arrow_back.svg"
+                alt=""
+              />
+              <span class="text-sm leading-6 cursor-pointer hover:underline">
+                Regresar
+              </span>
+            </div>
+
+            <div></div>
+            <div
+              class="flex w-[190px] h-[40px] justify-center items-center gap-1 flex-shrink-0 bg-[--color-cart-text-button-comp]"
+            >
+              <button
+                type="button"
+                class="cursor-pointer hover:underline text-white text-sm capitalize"
+              >
+                Continuar con Envio
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDE -->
+      <section
+        class="max-lg:hidden cart-info-right lg:w-[40%] h-screen bg-[--color-bg] flex flex-col justify-start items-center"
+      >
+        <div class="w-full flex justify-center">
+          <span class="text-xl font-bold mt-10 mb-10">
+            Carrito de Compras
+          </span>
+        </div>
+
+        <!-- CART CARD -->
+        <div
+          class="cart-card-item w-[350px] xl:w-[500px] flex justify-around mb-5"
+        >
+          <img
+            class="w-[120px] h-[140px] md:w-[140px] md:h-[150px] cursor-pointer hover:scale-90 xl"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-negro-volcom.jpg"
+            title="."
+          />
+
+          <div
+            class="xl:w-[210px] flex-col capitalize leading-7 flex justify-start gap-2"
+          >
+            <div class="font-bold cursor-pointer hover:underline break-words">
+              Polo nike
+            </div>
+            <div class="">Talla: M</div>
+            <div class="">Color: Verde</div>
+            <div class="button-comp flex gap-3">
+              <img
+                class="cursor-pointer w-7 h-7 bg-[#D1D9CF]"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/d33fda00e112d0b57173f61dd0898f1d1f1f8b14/icons/minimize.svg"
+                alt=""
+              />
+              <span class="text-lg"> 1 </span>
+              <img
+                class="cursor-pointer w-7 h-7 bg-[#D1D9CF]"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/d33fda00e112d0b57173f61dd0898f1d1f1f8b14/icons/add.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="xl:w-[100px] cursor-pointer flex flex-col justify-between place-items-end"
+          >
+            <img
+              class="h-6 w-6 hover:scale-125 border-2"
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/d33fda00e112d0b57173f61dd0898f1d1f1f8b14/icons/close.svg"
+              alt=""
+            />
+            <p class="font-semibold md:mb-5"> S/. 49.90 </p>
+          </div>
+        </div>
+
+        <!-- CART CARD -->
+        <div
+          class="cart-card-item w-[350px] xl:w-[500px] flex justify-around mb-5"
+        >
+          <img class="w-[120px] h-[140px] md:w-[140px] md:h-[150px]
+          cursor-pointer hover:scale-90 xl " src="
+          https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-guinda-ripcurl.jpg""
+          title="." />
+
+          <div
+            class="xl:w-[210px] flex-col capitalize leading-7 flex justify-start gap-2"
+          >
+            <div class="font-bold cursor-pointer hover:underline break-words">
+              Polo nike
+            </div>
+            <div class="">Talla: M</div>
+            <div class="">Color: Verde</div>
+            <div class="button-comp flex gap-3">
+              <img
+                class="cursor-pointer w-7 h-7 bg-[#D1D9CF]"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/d33fda00e112d0b57173f61dd0898f1d1f1f8b14/icons/minimize.svg"
+                alt=""
+              />
+              <span class="text-lg"> 1 </span>
+              <img
+                class="cursor-pointer w-7 h-7 bg-[#D1D9CF]"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/d33fda00e112d0b57173f61dd0898f1d1f1f8b14/icons/add.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="xl:w-[100px] cursor-pointer flex flex-col justify-between place-items-end"
+          >
+            <img
+              class="h-6 w-6 hover:scale-125 border-2"
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/d33fda00e112d0b57173f61dd0898f1d1f1f8b14/icons/close.svg"
+              alt=""
+            />
+            <p class="font-semibold md:mb-5">S/. 49.90</p>
+          </div>
+        </div>
+
+        <div class="mt-16 flex flex-col w-full">
+          <div class="flex justify-end gap-5 mx-5">
+            <p class="mb-2 text-lg leading-8">Subtotal:</p>
+            <p class="mb-2 text-lg leading-8 font-semibold">S/ 149.90</p>
+          </div>
+          <div class="flex justify-end gap-5 mx-5">
+            <p class="mb-2 text-lg leading-8">Envio:</p>
+            <p class="mb-2 text-lg leading-8"></p>
+          </div>
+          <div class="flex justify-end gap-5 mx-5">
+            <p class="mb-2 text-lg leading-8">Total:</p>
+            <p class="mb-2 text-lg leading-8 font-semibold">S/149.90</p>
+          </div>
+
+          <p class="mt-2 mx-5 text-right text-xs">
+            (*) El importe total que pagará sera calculado en la seccion ENVIOS.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
