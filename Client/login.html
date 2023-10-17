@@ -85,18 +85,10 @@
     <main class="bg-white h-full flex justify-center items-center p-5">
       <div class="bg-white p-6 w-full max-w-[420px] mix-w-[380px]">
         <h1 class="font-semibold mb-5 text-center capitalize text-3xl">
-          Crear Cuenta
+          Ingresa Con Tu Cuenta
         </h1>
 
         <form>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Nombre Completo"
-            class="w-full p-2 mb-3 border border-[--color-form-border] placeholder:text-sm"
-          />
-
           <input
             type="email"
             id="email"
@@ -113,23 +105,23 @@
             class="w-full p-2 mb-3 border border-[--color-form-border] placeholder:text-sm"
           />
 
+          <div class="h-10 mb-2">
+            <a href="#" class="text-base capitalize">
+              ¿Olvidaste tu contraseña?
+            </a>
+          </div>
+
           <!-- <button
             class="w-full flex mb-6 mt-2 items-center justify-center px-4 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
-            onclick="event.preventDefault(); window.location.href='//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/?showRegisterModal=true';"
+            onclick="event.preventDefault(); window.location.href='//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));"
           > -->
           <button
             class="w-full flex mb-6 mt-2 items-center justify-center px-4 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
-            onclick="event.preventDefault(); window.location.href='index.html?showModal=true';"
+            onclick="event.preventDefault(); window.location.href='index.html'"
           >
-            Registrarse
+            Ingresar
           </button>
 
-          <div class="h-10 flex justify-center items-center mb-2">
-            <p class="text-sm capitalize">ya tienes una cuenta?</p>
-            <a href="#" class="pl-4 text-center text-sm capitalize">
-              Ingresar
-            </a>
-          </div>
           <div
             class="flex flex-col items-center justify-center text-xs mb-6 text-center gap-6"
           >
@@ -141,13 +133,8 @@
           </div>
 
           <div class="text-center">
-            <span class="text-neutral-950 text-xs"
-              >Al hacer clic en "Registrarse", aceptas los
-            </span>
-            <a href="#" class="text-xs underline">terminos y condiciones</a>
-            <span class="text-xs"> y la </span>
-            <a href="#" class="text-xs underline">política de privacidad</a>
-            <span class="text-xs">.</span>
+            <span class="text-neutral-950 text-base">¿Eres nuevo? </span>
+            <a href="#" class="text-base underline">Crea una cuenta</a>
           </div>
         </form>
       </div>

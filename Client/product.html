@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beautipol Products</title>
-
+    <title>Beautipol</title>
     <!-- Google FONTS  -->
     <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,20 +27,20 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./shared/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
-    <div class="announcement-bar">
-      <div class="p-1.5 text-center">
-        <p class="announcement-bar-text">
-          Delivery gratis a partir de S/ 199.00 en todo Lima y provincias
+
+  <body class="flex flex-col h-screen">
+    <header>
+      <div class="header-bar py-2 flex items-center justify-center">
+        <p class="text-sm">
+          Delivery <span class="font-semibold">gratis</span> por compras a
+          partir de <span class="font-semibold">S/199.00</span> soles.
         </p>
       </div>
-    </div>
 
-    <header class="py-4 border gap">
-      <nav class="flex justify-around items-center m:justify-around">
-        <div class="nav-left text-center">
+      <nav class="max-sm:p-1.5 flex justify-between items-center md:px-4">
+        <div class="nav-left md:px-3.5">
           <img
             class="h-[70px] max-sm:hidden"
             src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/logo/beautipol-textlogo.png"
@@ -49,38 +48,78 @@
           />
         </div>
         <div class="nav-center">
-          <ul class="flex gap-4 md:text-2xl md:gap-12">
-            <li class="cursor-pointer">Inicio</li>
-            <li class="cursor-pointer">Productos</li>
-            <li class="cursor-pointer">Descuentos</li>
+          <ul class="flex gap-4 md:text-lg md:gap-x-12">
+            <li class="cursor-pointer">
+              <a class="nav-center-link" href="" data-link-alt="Home">
+                <span> Home </span>
+              </a>
+            </li>
+            <li class="cursor-pointer">
+              <a class="nav-center-link" href="" data-link-alt="Productos">
+                <span> Productos </span>
+              </a>
+            </li>
+            <li class="cursor-pointer">
+              <a class="nav-center-link" href="" data-link-alt="Descuentos">
+                <span> Descuentos </span></a
+              >
+            </li>
           </ul>
         </div>
-        <div class="nav-right flex gap-2">
+
+        <div class="nav-right flex px-4 gap-7">
           <img
-            class="w-5 cursor-pointer"
-            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/login.svg"
+            class="w-5 cursor-pointer transform hover:scale-[1.3] transition-transform duration-[0.25s]"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/login.svg"
             alt=""
           />
           <img
-            class="w-5 cursor-pointer"
-            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/shopping-cart.svg"
+            class="w-5 cursor-pointer transform hover:scale-[1.3] transition-transform duration-[0.25s]"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/shopping-cart.svg"
             alt=""
           />
         </div>
       </nav>
     </header>
-    <div class="py-8 pl-24 max-sm:pl-9 max-lg:pl-12">
-      <p><a>Inicio</a> / <a>Productos</a></p>
-    </div>
-    <div class="hero">
+
+    <section class="hero">
       <div
-        class="bord bg-[url('https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/banner-nobg.jpg')] h-[600px] bg-center bg-cover bg-no-repeat max-sm:h-[300px] max-lg:h-[400px]"
-      ></div>
-    </div>
+        class="bord bg-[url('https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polos-colgados-verdes-hero.jpg')] h-[600px] bg-center bg-cover relative bg-no-repeat"
+      >
+        <div class="flex justify-center items-center flex-col h-full gap-14">
+          <div class="bg-white bg-opacity-50 p-6 space-y-4">
+            <div>
+              <p
+                class="text-3xl font-bold md:text-4xl text-center tracking-wide"
+              >
+                NUEVA COLECCION
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-2xl font-semibold md:text-3xl text-center tracking-wide"
+              >
+                VERANO 2023
+              </p>
+            </div>
+          </div>
+          <button
+            class="flex items-center justify-center w-[184px] px-4 py-5 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-[16px] font-normal capitalize leading-normal transition-transform duration-100 hover:scale-110"
+          >
+            Ver Productos
+          </button>
+        </div>
+      </div>
+    </section>
+
     <main class="mt-20 w-full max-lg:mt-10">
       <section class="flex justify-around mb-20 max-lg:block max-lg:mb-10">
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Urban Green</h3>
             <div class="flex justify-between">
@@ -95,7 +134,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Style Green</h3>
             <div class="flex justify-between">
@@ -110,7 +153,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-verde-claro-nike-m-nobg.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Sweet Green</h3>
             <div class="flex justify-between">
@@ -127,7 +174,11 @@
       </section>
       <section class="flex justify-around mb-20 max-lg:block max-lg:mb-10">
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-turqueza.png" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-turqueza.png"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Urban Turquoise</h3>
             <div class="flex justify-between">
@@ -142,7 +193,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-turqueza.png" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-turqueza.png"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Style Turquoise</h3>
             <div class="flex justify-between">
@@ -157,7 +212,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-turqueza.png" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-turqueza.png"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Sweet Turquoise</h3>
             <div class="flex justify-between">
@@ -174,7 +233,11 @@
       </section>
       <section class="flex justify-around mb-20 max-lg:block max-lg:mb-10">
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-%20amarillo-billabong-logo.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-%20amarillo-billabong-logo.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Urban Yellow</h3>
             <div class="flex justify-between">
@@ -189,7 +252,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-%20amarillo-billabong-logo.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-%20amarillo-billabong-logo.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Style Yellow</h3>
             <div class="flex justify-between">
@@ -204,7 +271,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-%20amarillo-billabong-logo.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-%20amarillo-billabong-logo.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Sweet Yellow</h3>
             <div class="flex justify-between">
@@ -221,7 +292,11 @@
       </section>
       <section class="flex justify-around mb-36 max-lg:block max-lg:mb-16">
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-marron-ripcurl-floreado.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-marron-ripcurl-floreado.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Urban Brown</h3>
             <div class="flex justify-between">
@@ -236,7 +311,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-marron-ripcurl-floreado.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-marron-ripcurl-floreado.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Style Brown</h3>
             <div class="flex justify-between">
@@ -251,7 +330,11 @@
           </div>
         </div>
         <div class="w-[357px] max-lg:m-auto max-lg:mt-10">
-          <img src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-marron-ripcurl-floreado.jpg" alt="" class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat">
+          <img
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/polo-marron-ripcurl-floreado.jpg"
+            alt=""
+            class="w-[357px] h-[350px] bg-center bg-contain bg-no-repeat"
+          />
           <div class="mt-2">
             <h3 class="font-bold">Polo Sweet Brown</h3>
             <div class="flex justify-between">
@@ -267,7 +350,11 @@
         </div>
       </section>
       <div class="mb-14">
-        <div class="w-40 h-10 border border-black shadow-md m-auto text-center p-1"><button>Cargar Más</button></div>
+        <div
+          class="w-40 h-10 border border-black shadow-md m-auto text-center p-1"
+        >
+          <button>Cargar Más</button>
+        </div>
       </div>
     </main>
     <footer class="px-[15px]">
@@ -290,7 +377,7 @@
                 class="absolute inset-y-0 right-12 md:right-3 flex items-center pointer-events-none cursor-pointer"
                 ><img
                   class="w-5"
-                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/arrow-forward.svg"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/arrow-forward.svg"
                   alt=""
               /></span>
             </div>
@@ -324,7 +411,7 @@
             <a href="#"
               ><img
                 class="w-6 h-6"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/facebook-logo.svg"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/facebook-logo.svg"
                 alt="Facebook"
             /></a>
           </li>
@@ -332,7 +419,7 @@
             <a href="#"
               ><img
                 class="w-6 h-6"
-                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/instagram-logo.svg"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/instagram-logo.svg"
                 alt="Whatsapp"
             /></a>
           </li>
@@ -341,7 +428,7 @@
       <div class="color-text-white flex justify-center gap-1 py-1.5">
         <img
           class="w-10px"
-          src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/3b80d3e79d23c548200611e147b287de1d22a5ce/icons/copyright.svg"
+          src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/copyright.svg"
           alt=""
         />
         <p>2023 Beautipol. Todos los derechos reservados.</p>
