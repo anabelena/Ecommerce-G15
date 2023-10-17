@@ -6,7 +6,7 @@
 body {
 
     background-color: var(--color-bg);
-    font-family: 'Montserrat',monospace;
+    font-family: 'Montserrat', monospace;
     font-size: 1rem; /*16px*/
     color: var(--color-alternative-text);
     
@@ -17,6 +17,7 @@ body {
     --color-bg-announcement-bar:#3B6978;
     --color-base-text:#f1ebe3;
     --color-alternative-text:#121212;
+    --color-cart-text-button-comp:#49656f
     /* --color-alternative-text:#404040; */
 }
 
@@ -38,7 +39,6 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-
 
 .nav-center-link {
     font-size: 1rem;
