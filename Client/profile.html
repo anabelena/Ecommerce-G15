@@ -82,76 +82,116 @@
       </nav>
     </header>
 
-    <main class="bg-white h-full flex justify-center items-center p-5">
-      <div class="bg-white p-6 w-full max-w-[420px] mix-w-[380px]">
+    <main class="bg-white flex justify-center items-center p-5 h-fit">
+      <div class="bg-white p-6 w-screen md:w-fit">
+        <span class="mb-7 flex items-center cursor-pointer">
+          <img
+            class="w-5"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/arrow-back.svg"
+            alt=""
+          />
+          <a class="ml-5 text-[--color-main-text]" href="index.html"
+            >Volver a la página de inicio</a
+          >
+        </span>
+
         <h1 class="font-semibold mb-5 text-center capitalize text-3xl">
-          Crear Cuenta
+          Mi Cuenta
         </h1>
-
-        <form>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Nombre Completo"
-            class="w-full p-2 mb-3 border border-[--color-form-border] placeholder:text-sm"
-          />
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Correo electrónico"
-            class="w-full p-2 mb-3 border border-[--color-form-border] placeholder:text-sm"
-          />
-
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Contraseña"
-            class="w-full p-2 mb-3 border border-[--color-form-border] placeholder:text-sm"
-          />
-
-          <!-- <button
-            class="w-full flex mb-6 mt-2 items-center justify-center px-4 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
-            onclick="event.preventDefault(); window.location.href='//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/?showRegisterModal=true';"
-          > -->
-          <button
-            class="w-full flex mb-6 mt-2 items-center justify-center px-4 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
-            onclick="event.preventDefault(); window.location.href='index.html?showModal=true';"
-          >
-            Registrarse
-          </button>
-
-          <div class="h-10 flex justify-center items-center mb-2">
-            <p class="text-sm capitalize">ya tienes una cuenta?</p>
-            <a href="#" class="pl-4 text-center text-sm capitalize">
-              Ingresar
-            </a>
-          </div>
+        <form class="mb-6">
+          <h2 class="text-base mb-4 font-semibold">Mis Datos Personales</h2>
+          <hr class="mb-5" />
           <div
-            class="flex flex-col items-center justify-center text-xs mb-6 text-center gap-6"
+            class="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center mb-10 text-center md:text-start"
           >
-            <p>o entra con tu cuenta gmail</p>
-            <img
-              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/copyright.svg"
-              alt="Google login"
-            />
+            <!-- Fix is here: using grid-rows-[3rem] -->
+            <label class="font-semibold">Correo Electrónico:</label>
+            <label class="block input-value" data-type="email"
+              >beautipol.alpha.1@gmail.com</label
+            >
+
+            <label class="font-semibold">Nombre Completo:</label>
+            <label class="block input-value" data-type="text"
+              >Alpha Tester 1</label
+            >
+
+            <label class="font-semibold">Teléfono:</label>
+            <label class="block input-value" data-type="tel"
+              >+51 999 999 999</label
+            >
+
+            <label class="font-semibold">Dirección:</label>
+            <label class="block input-value" data-type="text">Cercado</label>
+
+            <label class="font-semibold">Casa o Apt.:</label>
+            <label class="block input-value" data-type="text">-</label>
+
+            <label class="font-semibold">Ciudad</label>
+            <label class="block input-value" data-type="text">Arequipa</label>
+
+            <label class="font-semibold">Región</label>
+            <label class="block input-value" data-type="text">Arequipa</label>
+            <label class="font-semibold">País</label>
+            <label id="country" class="block input-value" data-type="text"
+              >Perú</label
+            >
           </div>
 
-          <div class="text-center">
-            <span class="text-neutral-950 text-xs"
-              >Al hacer clic en "Registrarse", aceptas los
-            </span>
-            <a href="#" class="text-xs underline">terminos y condiciones</a>
-            <span class="text-xs"> y la </span>
-            <a href="#" class="text-xs underline">política de privacidad</a>
-            <span class="text-xs">.</span>
+          <div class="flex justify-center">
+            <button
+              id="button-change"
+              class="mb-6 mt-2 items-center px-20 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
+              onclick="event.preventDefault(); changeToInputs();"
+            >
+              Cambiar
+            </button>
+            <button
+              id="button-save"
+              class="mb-6 mt-2 items-center px-20 py-4 bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100 hidden"
+              onclick="event.preventDefault(); changeToLabels()"
+            >
+              Guardar Cambios
+            </button>
           </div>
         </form>
+
+        <!-- ... Add payment method section ... -->
       </div>
     </main>
+
+    <script>
+      const saveBtn = document.querySelector("#button-save");
+      const changeBtn = document.querySelector("#button-change");
+
+      function changeToLabels() {
+        const inputs = document.querySelectorAll("input");
+        inputs.forEach((input) => {
+          const label = document.createElement("label");
+          label.textContent = input.value;
+          label.className = "font-semibold block input-value";
+          label.setAttribute("data-type", input.type); // Ensure that we keep the data-type attribute when changing back to labels
+          label.id = input.id;
+          input.replaceWith(label);
+        });
+        saveBtn.style.display = "none";
+        changeBtn.style.display = "block";
+      }
+
+      function changeToInputs() {
+        document.querySelectorAll("label.input-value").forEach((label) => {
+          const input = document.createElement("input");
+          input.setAttribute("value", label.textContent);
+          input.className =
+            "border border-[--color-form-border] placeholder:text-sm p-2 w-full min-w-[260px]";
+          input.type = label.getAttribute("data-type"); // Use the data-type attribute to set the type of the input
+          if (label.id == "country") input.disabled = true;
+          input.id = label.id;
+          label.replaceWith(input);
+        });
+        changeBtn.style.display = "none";
+        saveBtn.style.display = "block";
+      }
+    </script>
 
     <footer class="pt-5 pb-5">
       <div
