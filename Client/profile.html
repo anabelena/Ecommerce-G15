@@ -83,14 +83,14 @@
     </header>
 
     <main class="bg-white flex justify-center items-center p-5 h-fit">
-      <div class="bg-white p-6 w-screen md:w-fit">
+      <div class="bg-white p-6 w-screen md:w-fit max-w-[550px] mix-w-[380px]">
         <span class="mb-7 flex items-center cursor-pointer">
           <img
             class="w-5"
             src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/arrow_back.svg"
             alt=""
           />
-          <a class="ml-5 text-[--color-main-text]" href="index.html"
+          <a class="ml-5 text-[--color-main-text]" href="./index.html"
             >Volver a la página de inicio</a
           >
         </span>
@@ -98,32 +98,50 @@
         <h1 class="font-semibold mb-5 text-center capitalize text-3xl">
           Mi Cuenta
         </h1>
-        <form class="mb-6">
-          <h2 class="text-base mb-4 font-semibold">Mis Datos Personales</h2>
+        <form class="mb-6 min-w-auto md:min-w-[510px]">
+          <div class="flex justify-between place-items-baseline">
+            <h2 class="text-base mb-4 font-semibold">Mis Datos Personales</h2>
+            <button
+              id="button-change-personal"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
+              onclick="event.preventDefault(); changeToInputs('personal');"
+            >
+              Cambiar
+            </button>
+            <button
+              id="button-save-personal"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100 hidden"
+              onclick="event.preventDefault(); changeToLabels('personal')"
+            >
+              Guardar
+            </button>
+          </div>
+
           <hr class="mb-5" />
           <div
-            class="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center mb-10 text-center md:text-start"
+            id="personal"
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center mb-10 text-center md:text-start"
           >
             <!-- Fix is here: using grid-rows-[3rem] -->
-            <label class="font-semibold">Correo Electrónico:</label>
+            <label class="font-semibold">Correo Electrónico</label>
             <label class="block input-value" data-type="email"
               >beautipol.alpha.1@gmail.com</label
             >
 
-            <label class="font-semibold">Nombre Completo:</label>
+            <label class="font-semibold">Nombre Completo</label>
             <label class="block input-value" data-type="text"
               >Alpha Tester 1</label
             >
 
-            <label class="font-semibold">Teléfono:</label>
+            <label class="font-semibold">Teléfono</label>
             <label class="block input-value" data-type="tel"
               >+51 999 999 999</label
             >
 
-            <label class="font-semibold">Dirección:</label>
+            <label class="font-semibold">Dirección</label>
             <label class="block input-value" data-type="text">Cercado</label>
 
-            <label class="font-semibold">Casa o Apt.:</label>
+            <label class="font-semibold">Casa o Apt.</label>
             <label class="block input-value" data-type="text">-</label>
 
             <label class="font-semibold">Ciudad</label>
@@ -136,58 +154,92 @@
               >Perú</label
             >
           </div>
+        </form>
 
-          <div class="flex justify-center">
+        <form class="mb-6">
+          <div class="flex justify-between place-items-baseline">
+            <h2 class="text-base mb-4 font-semibold">Método de Pago</h2>
             <button
-              id="button-change"
-              class="mb-6 mt-2 items-center px-20 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
-              onclick="event.preventDefault(); changeToInputs();"
+              id="button-change-payment"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
+              onclick="event.preventDefault(); changeToInputs('payment');"
             >
               Cambiar
             </button>
             <button
-              id="button-save"
-              class="mb-6 mt-2 items-center px-20 py-4 bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100 hidden"
-              onclick="event.preventDefault(); changeToLabels()"
+              id="button-save-payment"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100 hidden"
+              onclick="event.preventDefault(); changeToLabels('payment')"
             >
-              Guardar Cambios
+              Guardar
             </button>
           </div>
-        </form>
 
-        <!-- ... Add payment method section ... -->
+          <hr class="mb-5" />
+          <div
+            id="payment"
+            class="flex flex-col md:flex-row justify-between gap-4 md:gap-8 items-center mb-10 md:text-start"
+          >
+            <!-- Fix is here: using grid-rows-[3rem] -->
+            <div class="text-center flex flex-col gap-4">
+              <label class="font-semibold">Tarjeta</label>
+              <label class="block input-value" data-type="email"
+                >Visa ••• 3011</label
+              >
+            </div>
+            <div class="text-center flex flex-col gap-4">
+              <label class="font-semibold">Expiración</label>
+              <label class="block input-value" data-type="text">12/23</label>
+            </div>
+            <div class="text-center flex flex-col gap-4">
+              <label class="font-semibold">CVC</label>
+              <label class="block input-value" data-type="tel">•••</label>
+            </div>
+          </div>
+        </form>
       </div>
     </main>
 
     <script>
-      const saveBtn = document.querySelector("#button-save");
-      const changeBtn = document.querySelector("#button-change");
+      function changeToLabels(containerId) {
+        const saveBtn = document.querySelector(`#button-save-${containerId}`);
+        const changeBtn = document.querySelector(
+          `#button-change-${containerId}`
+        );
+        const inputs = document.querySelectorAll(`#${containerId} input`);
 
-      function changeToLabels() {
-        const inputs = document.querySelectorAll("input");
         inputs.forEach((input) => {
           const label = document.createElement("label");
           label.textContent = input.value;
-          label.className = "font-semibold block input-value";
-          label.setAttribute("data-type", input.type); // Ensure that we keep the data-type attribute when changing back to labels
+          label.className = "block input-value";
+          label.setAttribute("data-type", input.type);
           label.id = input.id;
           input.replaceWith(label);
         });
+
         saveBtn.style.display = "none";
         changeBtn.style.display = "block";
       }
 
-      function changeToInputs() {
-        document.querySelectorAll("label.input-value").forEach((label) => {
-          const input = document.createElement("input");
-          input.setAttribute("value", label.textContent);
-          input.className =
-            "border border-[--color-form-border] placeholder:text-sm p-2 w-full min-w-[260px]";
-          input.type = label.getAttribute("data-type"); // Use the data-type attribute to set the type of the input
-          if (label.id == "country") input.disabled = true;
-          input.id = label.id;
-          label.replaceWith(input);
-        });
+      function changeToInputs(containerId) {
+        const saveBtn = document.querySelector(`#button-save-${containerId}`);
+        const changeBtn = document.querySelector(
+          `#button-change-${containerId}`
+        );
+
+        document
+          .querySelectorAll(`#${containerId} label.input-value`)
+          .forEach((label) => {
+            const input = document.createElement("input");
+            input.setAttribute("value", label.textContent);
+            input.className =
+              "border border-[--color-form-border] placeholder:text-sm w-full text-center md:text-start";
+            input.type = label.getAttribute("data-type");
+            if (label.id == "country") input.disabled = true;
+            input.id = label.id;
+            label.replaceWith(input);
+          });
+
         changeBtn.style.display = "none";
         saveBtn.style.display = "block";
       }
