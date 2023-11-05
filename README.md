@@ -1,13 +1,12 @@
 # ECOMMERCE-G15
 
-An e-commerce website created during a Fullstack bootcamp.
+An e-commerce html mockup developed for a Fullstack bootcamp project.
 
 ## Tools & Frameworks
 
-- HTML5
-- CSS3
+- HTML5/CSS3
 - Tailwind
 
 ## Online demo
 
-TODO
+https://rgap.github.io/Ecommerce-G15
