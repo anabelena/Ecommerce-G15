@@ -1,6 +1,6 @@
 # ECOMMERCE-G15
 
-An html mockup developed for a Fullstack bootcamp project.
+An html mockup developed for a Fullstack bootcamp
 
 ## Tools & Frameworks
 
