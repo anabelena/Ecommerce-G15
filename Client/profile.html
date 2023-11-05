@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautipol</title>
+    <!-- Google FONTS  -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Sedgwick Ave -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- League Spartan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body class="flex flex-col h-screen">
+    <header>
+      <div class="header-bar py-2 flex items-center justify-center">
+        <p class="text-sm">
+          Delivery <span class="font-semibold">gratis</span> por compras a
+          partir de <span class="font-semibold">S/199.00</span> soles.
+        </p>
+      </div>
+
+      <nav class="max-sm:p-1.5 flex justify-between items-center md:px-4">
+        <div class="nav-left md:px-3.5">
+          <img
+            class="h-[70px] max-sm:hidden"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/logo/beautipol-textlogo.png"
+            alt=""
+          />
+        </div>
+        <div class="nav-center">
+          <ul class="flex gap-4 md:text-lg md:gap-x-12">
+            <li class="cursor-pointer">
+              <a class="nav-center-link" href="" data-link-alt="Home">
+                <span> Home </span>
+              </a>
+            </li>
+            <li class="cursor-pointer">
+              <a class="nav-center-link" href="" data-link-alt="Productos">
+                <span> Productos </span>
+              </a>
+            </li>
+            <li class="cursor-pointer">
+              <a class="nav-center-link" href="" data-link-alt="Descuentos">
+                <span> Descuentos </span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-right flex px-4 gap-7">
+          <img
+            class="w-5 cursor-pointer transform hover:scale-[1.3] transition-transform duration-[0.25s]"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/login.svg"
+            alt=""
+          />
+          <img
+            class="w-5 cursor-pointer transform hover:scale-[1.3] transition-transform duration-[0.25s]"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/shopping-cart.svg"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-white flex justify-center items-center p-5 h-fit">
+      <div class="bg-white p-6 w-screen md:w-fit max-w-[550px] mix-w-[380px]">
+        <span class="mb-7 flex items-center cursor-pointer">
+          <img
+            class="w-5"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/arrow_back.svg"
+            alt=""
+          />
+          <a class="ml-5 text-[--color-main-text]" href="./index.html"
+            >Volver a la página de inicio</a
+          >
+        </span>
+
+        <h1 class="font-semibold mb-5 text-center capitalize text-3xl">
+          Mi Cuenta
+        </h1>
+        <form class="mb-6 min-w-auto md:min-w-[510px]">
+          <div class="flex justify-between place-items-baseline">
+            <h2 class="text-base mb-4 font-semibold">Mis Datos Personales</h2>
+            <button
+              id="button-change-personal"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
+              onclick="event.preventDefault(); changeToInputs('personal');"
+            >
+              Cambiar
+            </button>
+            <button
+              id="button-save-personal"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100 hidden"
+              onclick="event.preventDefault(); changeToLabels('personal')"
+            >
+              Guardar
+            </button>
+          </div>
+
+          <hr class="mb-5" />
+          <div
+            id="personal"
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center mb-10 text-center md:text-start"
+          >
+            <!-- Fix is here: using grid-rows-[3rem] -->
+            <label class="font-semibold">Correo Electrónico</label>
+            <label class="block input-value" data-type="email"
+              >beautipol.alpha.1@gmail.com</label
+            >
+
+            <label class="font-semibold">Nombre Completo</label>
+            <label class="block input-value" data-type="text"
+              >Alpha Tester 1</label
+            >
+
+            <label class="font-semibold">Teléfono</label>
+            <label class="block input-value" data-type="tel"
+              >+51 999 999 999</label
+            >
+
+            <label class="font-semibold">Dirección</label>
+            <label class="block input-value" data-type="text">Cercado</label>
+
+            <label class="font-semibold">Casa o Apt.</label>
+            <label class="block input-value" data-type="text">-</label>
+
+            <label class="font-semibold">Ciudad</label>
+            <label class="block input-value" data-type="text">Arequipa</label>
+
+            <label class="font-semibold">Región</label>
+            <label class="block input-value" data-type="text">Arequipa</label>
+            <label class="font-semibold">País</label>
+            <label id="country" class="block input-value" data-type="text"
+              >Perú</label
+            >
+          </div>
+        </form>
+
+        <form class="mb-6">
+          <div class="flex justify-between place-items-baseline">
+            <h2 class="text-base mb-4 font-semibold">Método de Pago</h2>
+            <button
+              id="button-change-payment"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-bg-header-footer] hover:bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100"
+              onclick="event.preventDefault(); changeToInputs('payment');"
+            >
+              Cambiar
+            </button>
+            <button
+              id="button-save-payment"
+              class="mb-6 mt-2 items-center px-7 py-4 bg-[--color-button-text-hero] text-white text-sm capitalize leading-normal transition-transform duration-100 hidden"
+              onclick="event.preventDefault(); changeToLabels('payment')"
+            >
+              Guardar
+            </button>
+          </div>
+
+          <hr class="mb-5" />
+          <div
+            id="payment"
+            class="flex flex-col md:flex-row justify-between gap-4 md:gap-8 items-center mb-10 md:text-start"
+          >
+            <!-- Fix is here: using grid-rows-[3rem] -->
+            <div class="text-center flex flex-col gap-4">
+              <label class="font-semibold">Tarjeta</label>
+              <label class="block input-value" data-type="email"
+                >Visa ••• 3011</label
+              >
+            </div>
+            <div class="text-center flex flex-col gap-4">
+              <label class="font-semibold">Expiración</label>
+              <label class="block input-value" data-type="text">12/23</label>
+            </div>
+            <div class="text-center flex flex-col gap-4">
+              <label class="font-semibold">CVC</label>
+              <label class="block input-value" data-type="tel">•••</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      function changeToLabels(containerId) {
+        const saveBtn = document.querySelector(`#button-save-${containerId}`);
+        const changeBtn = document.querySelector(
+          `#button-change-${containerId}`
+        );
+        const inputs = document.querySelectorAll(`#${containerId} input`);
+
+        inputs.forEach((input) => {
+          const label = document.createElement("label");
+          label.textContent = input.value;
+          label.className = "block input-value";
+          label.setAttribute("data-type", input.type);
+          label.id = input.id;
+          input.replaceWith(label);
+        });
+
+        saveBtn.style.display = "none";
+        changeBtn.style.display = "block";
+      }
+
+      function changeToInputs(containerId) {
+        const saveBtn = document.querySelector(`#button-save-${containerId}`);
+        const changeBtn = document.querySelector(
+          `#button-change-${containerId}`
+        );
+
+        document
+          .querySelectorAll(`#${containerId} label.input-value`)
+          .forEach((label) => {
+            const input = document.createElement("input");
+            input.setAttribute("value", label.textContent);
+            input.className =
+              "border border-[--color-form-border] placeholder:text-sm w-full text-center md:text-start";
+            input.type = label.getAttribute("data-type");
+            if (label.id == "country") input.disabled = true;
+            input.id = label.id;
+            label.replaceWith(input);
+          });
+
+        changeBtn.style.display = "none";
+        saveBtn.style.display = "block";
+      }
+    </script>
+
+    <footer class="pt-5 pb-5">
+      <div
+        class="mr-6 ml-6 md:mr-20 md:ml-20 color-text-white flex flex-col justify-between lg:flex-row"
+      >
+        <div class="footer-left pb-5">
+          <p class="footer-title font-bold md:text-xl">
+            Unete y obten un 15% en tu primera compra.
+          </p>
+          <form action="#" method="post" class="flex flex-col space-y-4">
+            <label for="email-subscription"></label>
+            <div class="relative">
+              <input
+                class="p-2 pr-6 w-full lg:w-full border pl-2"
+                type="email"
+                id="email-subscription"
+                name="email-subscription"
+                placeholder="Tu correo electronico."
+              />
+              <span
+                class="absolute inset-y-0 right-8 md:right-3 flex items-center pointer-events-none cursor-pointer"
+                ><img
+                  class="w-5"
+                  src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/arrow-forward.svg"
+                  alt=""
+              /></span>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="footer-right color-text-white max-md:text-left grid grid-cols-2 md:gap-x-20 gap-x-[25vw]"
+        >
+          <div class="">
+            <p class="font-bold md:text-xl pb-2">Sobre Nosotros</p>
+            <p />
+            <ul class="md:text-lg md:font-normal">
+              <li class="leading-10 cursor-pointer">Nuestra Historia</li>
+              <li class="leading-10 cursor-pointer">Contactanos</li>
+              <li class="leading-10 cursor-pointer">Politica de Privacidad</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold md:text-xl pb-2">Ayuda y Soporte</p>
+            <ul class="md:text-lg md:font-normal">
+              <li class="leading-10 cursor-pointer">Ordenes y Envios</li>
+              <li class="leading-10 cursor-pointer">Devoluciones</li>
+              <li class="leading-10 cursor-pointer">FAQs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="ml-6 md:ml-20 md:flex-row mt-6 color-text-white">
+        <p class="footer-title font-semibold md:text-lg hidden md:block">
+          Siguenos en
+        </p>
+        <ul class="md:pt-5 flex gap-2">
+          <li>
+            <a href="#"
+              ><img
+                class="w-6 h-6"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/facebook-logo.svg"
+                alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-6 h-6"
+                src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/instagram-logo.svg"
+                alt="Whatsapp"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="ml-6 md:ml-20 max-sm:text-xs md:text-sm gap-1.5 mt-8 color-text-white flex justify-start items-center"
+      >
+        <img
+          class="w-[16px]"
+          src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/icons/copyright.svg"
+          alt=""
+        />
+        <p class="">2023 Beautipol. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

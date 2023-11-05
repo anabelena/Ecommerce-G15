@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart-payment</title>
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body class="bg-white">
+
+    <header class="logo">
+        <div class="px-2 py-2 md:px-10 md:pt-5 md:pb-5">
+          <img
+            class="h-[50px] md:h-[70px]"
+            src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/main/images/logo/beautipol-textlogo.png"
+            alt=""
+          />
+        </div>
+    </header>
+
+
+    <div class="max-sm:hidden breadcrumb flex gap-3 mb-10 ml-20 text-lg">
+      <div class="cursor-pointer hover:underline">Carrito</div>
+      <span>/</span>
+      <div class="cursor-pointer hover:underline">Informacion</div>
+      <span>/</span>
+      <div class="cursor-pointer hover:underline">Envios</div>
+      <span>/</span>
+      <div class="cursor-pointer">Pago</div>
+    </div>
+
+    <div class="lg:flex">
+      <!-- LEFT SIDE -->
+      <section class="cart-info-left lg:w-[50%] flex flex-col items-center">
+  
+        <p class="mb-5 font-bold">Direccion de Facturacion </p>
+
+        <form action="" class="w-[300px] md:w-[400px] xl:w-[400px] mb-10">
+
+          <div class="">
+            <div class="my-4">
+              <input type="checkbox" id="direccion" />
+              <label for="direccion" class="text-sm leading-6">
+                Usar la misma direccion de Facturacion</label
+              >
+            </div>
+    
+            <div class="my-4">
+              <input type="checkbox" id="agregar" />
+              <label for="agregar" class="text-sm leading-6">
+                Agregar otra direccion.</label
+              >
+            </div>
+          </div>
+
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/person_4.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Nombre y Apellidos "
+              class="w-full"
+            />
+          </div>
+
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/email.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Email"
+              class="w-full"
+            />
+          </div>
+
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/flag.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Pais"
+              class="w-full"
+            />
+          </div>
+
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/home.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Direccion Linea 1"
+              class="w-full"
+            />
+          </div>
+
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/home.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Direccion Linea 2"
+              class="w-full"
+            />
+          </div>
+
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/location_city.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Ciudad"
+              class="w-full"
+            />
+          </div>
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/markunread_mailbox.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Codigo Postal"
+              class="w-full"
+            />
+          </div>
+
+          <div class="mb-5 flex border border-gray-700 p-2 gap-1">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/52cf0b3d3fe199e6e045d5e4614923208fd65c56/icons/Payment-form/phone_iphone.svg"
+              alt=""
+            />
+            <label for=""></label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Telefono"
+              class="w-full"
+            />
+          </div>
+        </form>
+      </section>
+
+      <!-- RIGHT SIDE -->
+      <section
+        class="max-lg:hidden lg:w-[50%] flex flex-col justify-start items-start"
+      >
+        <div class="flex flex-col">
+          <p class="mb-5 font-bold">Pago</p>
+          <p class="mb-5">Selecciona metodo de pago</p>
+        </div>
+
+        <div class="flex gap-10 mt-10 mb-10">
+          <div class="w-[100px] h-[40px] flex">
+            <img
+              class=""
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/82306af9c3214a4e16f35b88166da045a8b7bc40/icons/Payment-creditcards/amex.svg"
+              alt=""
+            />
+          </div>
+          <div class="w-[100px] h-[40px] flex">
+            <img
+              class=""
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/82306af9c3214a4e16f35b88166da045a8b7bc40/icons/Payment-creditcards/Paypal.svg"
+              alt=""
+            />
+          </div>
+          <div class="w-[100px] h-[40px] flex">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/82306af9c3214a4e16f35b88166da045a8b7bc40/icons/Payment-creditcards/Visa.svg"
+              alt=""
+            />
+          </div>
+          <div class="w-[100px] h-[40px] flex">
+            <img
+              src="https://raw.githubusercontent.com/rgap/Ecommerce-G15-ImageRepository/82306af9c3214a4e16f35b88166da045a8b7bc40/icons/Payment-creditcards/Masterrcard.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <form action="" class="mb-10 w-[500px]">
+          
+          <label for="numerotarjeta" class="inline-block w-[150px]">
+            Numero Tarjeta
+          </label>
+          <input
+            type="text"
+            id=""
+            name="numerotarjeta"
+            title="numerotarjeta"
+            class="w-[320px] border border-gray-700 px-3 py-2 m-2"
+          />
+
+          <div class="flex">
+            <label for="" class="inline-block w-[150px]">
+              Fecha Expiracion
+            </label>
+            <div class="flex justify-between">
+              <input
+                type="text"
+                id=""
+                name=""
+                placeholder="Mes"
+                class="w-[120px] border border-gray-700 px-3 py-2 m-2"
+              />
+
+              <input
+                type="text"
+                id=""
+                name=""
+                placeholder="Año"
+                class="w-[120px] border border-gray-700 px-3 py-2 m-2"
+              />
+            </div>
+          </div>
+
+          <label for="CVV" class="inline-block w-[150px]"> CVV </label>
+          <input
+            type="text"
+            id="CVV"
+            name="CVV"
+            title="CVV"
+            class="w-[120px] border border-gray-700 px-3 py-2 m-2"
+          />
+
+          <button
+            type="submit"
+            class="w-full mt-8 p-2 h-12 border text-white text-sm capitalize cursor-pointer mx-1 my-0.5 bg-[--color-cart-text-button-comp]"
+          >
+            Pagar
+          </button>
+          
+          <p class="mt-2 text-justify">
+            
+            El precio total a pagar, incluidos los impuestos y gastos adicionales (si los hubiera), se indican claramente en la página de pago. Al hacer clic en "Pagar", usted autoriza el cargo correspondiente en su método de pago seleccionado  
+          </p>
+
+        </form>
+
+       
+
+      </section>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
